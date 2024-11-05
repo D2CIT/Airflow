@@ -1,0 +1,278 @@
+
+[2024-11-05T10:04:40.560+0000] {configuration.py:2096} INFO - Creating new FAB webserver config file in: /opt/airflow/webserver_config.py
+[2024-11-05T10:04:42.856+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Runs
+[2024-11-05T10:04:42.860+0000] {override.py:1951} INFO - Added Permission can create on DAG Runs to role Admin
+[2024-11-05T10:04:42.863+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Runs
+[2024-11-05T10:04:42.866+0000] {override.py:1951} INFO - Added Permission can read on DAG Runs to role Admin
+[2024-11-05T10:04:42.868+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG Runs
+[2024-11-05T10:04:42.871+0000] {override.py:1951} INFO - Added Permission can edit on DAG Runs to role Admin
+[2024-11-05T10:04:42.874+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Runs
+[2024-11-05T10:04:42.877+0000] {override.py:1951} INFO - Added Permission can delete on DAG Runs to role Admin
+[2024-11-05T10:04:42.880+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Runs
+[2024-11-05T10:04:42.883+0000] {override.py:1951} INFO - Added Permission menu access on DAG Runs to role Admin
+[2024-11-05T10:04:42.892+0000] {override.py:1900} INFO - Created Permission View: menu access on Browse
+[2024-11-05T10:04:42.895+0000] {override.py:1951} INFO - Added Permission menu access on Browse to role Admin
+[2024-11-05T10:04:42.909+0000] {override.py:1900} INFO - Created Permission View: can read on Jobs
+[2024-11-05T10:04:42.914+0000] {override.py:1951} INFO - Added Permission can read on Jobs to role Admin
+[2024-11-05T10:04:42.919+0000] {override.py:1900} INFO - Created Permission View: menu access on Jobs
+[2024-11-05T10:04:42.928+0000] {override.py:1951} INFO - Added Permission menu access on Jobs to role Admin
+[2024-11-05T10:04:42.945+0000] {override.py:1900} INFO - Created Permission View: can read on Audit Logs
+[2024-11-05T10:04:42.949+0000] {override.py:1951} INFO - Added Permission can read on Audit Logs to role Admin
+[2024-11-05T10:04:42.952+0000] {override.py:1900} INFO - Created Permission View: menu access on Audit Logs
+[2024-11-05T10:04:42.954+0000] {override.py:1951} INFO - Added Permission menu access on Audit Logs to role Admin
+[2024-11-05T10:04:42.969+0000] {override.py:1900} INFO - Created Permission View: can create on Variables
+[2024-11-05T10:04:42.973+0000] {override.py:1951} INFO - Added Permission can create on Variables to role Admin
+[2024-11-05T10:04:42.977+0000] {override.py:1900} INFO - Created Permission View: can read on Variables
+[2024-11-05T10:04:42.980+0000] {override.py:1951} INFO - Added Permission can read on Variables to role Admin
+[2024-11-05T10:04:42.984+0000] {override.py:1900} INFO - Created Permission View: can edit on Variables
+[2024-11-05T10:04:42.986+0000] {override.py:1951} INFO - Added Permission can edit on Variables to role Admin
+[2024-11-05T10:04:42.990+0000] {override.py:1900} INFO - Created Permission View: can delete on Variables
+[2024-11-05T10:04:42.993+0000] {override.py:1951} INFO - Added Permission can delete on Variables to role Admin
+[2024-11-05T10:04:42.999+0000] {override.py:1900} INFO - Created Permission View: menu access on Variables
+[2024-11-05T10:04:43.003+0000] {override.py:1951} INFO - Added Permission menu access on Variables to role Admin
+[2024-11-05T10:04:43.014+0000] {override.py:1900} INFO - Created Permission View: menu access on Admin
+[2024-11-05T10:04:43.017+0000] {override.py:1951} INFO - Added Permission menu access on Admin to role Admin
+[2024-11-05T10:04:43.031+0000] {override.py:1900} INFO - Created Permission View: can create on Task Instances
+[2024-11-05T10:04:43.033+0000] {override.py:1951} INFO - Added Permission can create on Task Instances to role Admin
+[2024-11-05T10:04:43.036+0000] {override.py:1900} INFO - Created Permission View: can read on Task Instances
+[2024-11-05T10:04:43.038+0000] {override.py:1951} INFO - Added Permission can read on Task Instances to role Admin
+[2024-11-05T10:04:43.041+0000] {override.py:1900} INFO - Created Permission View: can edit on Task Instances
+[2024-11-05T10:04:43.044+0000] {override.py:1951} INFO - Added Permission can edit on Task Instances to role Admin
+[2024-11-05T10:04:43.048+0000] {override.py:1900} INFO - Created Permission View: can delete on Task Instances
+[2024-11-05T10:04:43.051+0000] {override.py:1951} INFO - Added Permission can delete on Task Instances to role Admin
+[2024-11-05T10:04:43.054+0000] {override.py:1900} INFO - Created Permission View: menu access on Task Instances
+[2024-11-05T10:04:43.057+0000] {override.py:1951} INFO - Added Permission menu access on Task Instances to role Admin
+[2024-11-05T10:04:43.071+0000] {override.py:1900} INFO - Created Permission View: can read on Task Reschedules
+[2024-11-05T10:04:43.074+0000] {override.py:1951} INFO - Added Permission can read on Task Reschedules to role Admin
+[2024-11-05T10:04:43.077+0000] {override.py:1900} INFO - Created Permission View: menu access on Task Reschedules
+[2024-11-05T10:04:43.080+0000] {override.py:1951} INFO - Added Permission menu access on Task Reschedules to role Admin
+[2024-11-05T10:04:43.096+0000] {override.py:1900} INFO - Created Permission View: can read on Triggers
+[2024-11-05T10:04:43.099+0000] {override.py:1951} INFO - Added Permission can read on Triggers to role Admin
+[2024-11-05T10:04:43.101+0000] {override.py:1900} INFO - Created Permission View: menu access on Triggers
+[2024-11-05T10:04:43.105+0000] {override.py:1951} INFO - Added Permission menu access on Triggers to role Admin
+[2024-11-05T10:04:43.119+0000] {override.py:1900} INFO - Created Permission View: can read on Configurations
+[2024-11-05T10:04:43.123+0000] {override.py:1951} INFO - Added Permission can read on Configurations to role Admin
+[2024-11-05T10:04:43.126+0000] {override.py:1900} INFO - Created Permission View: menu access on Configurations
+[2024-11-05T10:04:43.129+0000] {override.py:1951} INFO - Added Permission menu access on Configurations to role Admin
+[2024-11-05T10:04:43.147+0000] {override.py:1900} INFO - Created Permission View: can create on Connections
+[2024-11-05T10:04:43.151+0000] {override.py:1951} INFO - Added Permission can create on Connections to role Admin
+[2024-11-05T10:04:43.154+0000] {override.py:1900} INFO - Created Permission View: can read on Connections
+[2024-11-05T10:04:43.157+0000] {override.py:1951} INFO - Added Permission can read on Connections to role Admin
+[2024-11-05T10:04:43.159+0000] {override.py:1900} INFO - Created Permission View: can edit on Connections
+[2024-11-05T10:04:43.162+0000] {override.py:1951} INFO - Added Permission can edit on Connections to role Admin
+[2024-11-05T10:04:43.165+0000] {override.py:1900} INFO - Created Permission View: can delete on Connections
+[2024-11-05T10:04:43.168+0000] {override.py:1951} INFO - Added Permission can delete on Connections to role Admin
+[2024-11-05T10:04:43.171+0000] {override.py:1900} INFO - Created Permission View: menu access on Connections
+[2024-11-05T10:04:43.174+0000] {override.py:1951} INFO - Added Permission menu access on Connections to role Admin
+[2024-11-05T10:04:43.191+0000] {override.py:1900} INFO - Created Permission View: can read on SLA Misses
+[2024-11-05T10:04:43.194+0000] {override.py:1951} INFO - Added Permission can read on SLA Misses to role Admin
+[2024-11-05T10:04:43.196+0000] {override.py:1900} INFO - Created Permission View: menu access on SLA Misses
+[2024-11-05T10:04:43.199+0000] {override.py:1951} INFO - Added Permission menu access on SLA Misses to role Admin
+[2024-11-05T10:04:43.201+0000] {override.py:1900} INFO - Created Permission View: can delete on SLA Misses
+[2024-11-05T10:04:43.204+0000] {override.py:1951} INFO - Added Permission can delete on SLA Misses to role Admin
+[2024-11-05T10:04:43.207+0000] {override.py:1900} INFO - Created Permission View: can edit on SLA Misses
+[2024-11-05T10:04:43.209+0000] {override.py:1951} INFO - Added Permission can edit on SLA Misses to role Admin
+[2024-11-05T10:04:43.221+0000] {override.py:1900} INFO - Created Permission View: can read on Plugins
+[2024-11-05T10:04:43.225+0000] {override.py:1951} INFO - Added Permission can read on Plugins to role Admin
+[2024-11-05T10:04:43.228+0000] {override.py:1900} INFO - Created Permission View: menu access on Plugins
+[2024-11-05T10:04:43.231+0000] {override.py:1951} INFO - Added Permission menu access on Plugins to role Admin
+[2024-11-05T10:04:43.246+0000] {override.py:1900} INFO - Created Permission View: can read on Providers
+[2024-11-05T10:04:43.249+0000] {override.py:1951} INFO - Added Permission can read on Providers to role Admin
+[2024-11-05T10:04:43.253+0000] {override.py:1900} INFO - Created Permission View: menu access on Providers
+[2024-11-05T10:04:43.256+0000] {override.py:1951} INFO - Added Permission menu access on Providers to role Admin
+[2024-11-05T10:04:43.272+0000] {override.py:1900} INFO - Created Permission View: can create on Pools
+[2024-11-05T10:04:43.276+0000] {override.py:1951} INFO - Added Permission can create on Pools to role Admin
+[2024-11-05T10:04:43.279+0000] {override.py:1900} INFO - Created Permission View: can read on Pools
+[2024-11-05T10:04:43.283+0000] {override.py:1951} INFO - Added Permission can read on Pools to role Admin
+[2024-11-05T10:04:43.286+0000] {override.py:1900} INFO - Created Permission View: can edit on Pools
+[2024-11-05T10:04:43.289+0000] {override.py:1951} INFO - Added Permission can edit on Pools to role Admin
+[2024-11-05T10:04:43.292+0000] {override.py:1900} INFO - Created Permission View: can delete on Pools
+[2024-11-05T10:04:43.295+0000] {override.py:1951} INFO - Added Permission can delete on Pools to role Admin
+[2024-11-05T10:04:43.298+0000] {override.py:1900} INFO - Created Permission View: menu access on Pools
+[2024-11-05T10:04:43.301+0000] {override.py:1951} INFO - Added Permission menu access on Pools to role Admin
+[2024-11-05T10:04:43.318+0000] {override.py:1900} INFO - Created Permission View: can read on XComs
+[2024-11-05T10:04:43.322+0000] {override.py:1951} INFO - Added Permission can read on XComs to role Admin
+[2024-11-05T10:04:43.325+0000] {override.py:1900} INFO - Created Permission View: can delete on XComs
+[2024-11-05T10:04:43.328+0000] {override.py:1951} INFO - Added Permission can delete on XComs to role Admin
+[2024-11-05T10:04:43.331+0000] {override.py:1900} INFO - Created Permission View: menu access on XComs
+[2024-11-05T10:04:43.333+0000] {override.py:1951} INFO - Added Permission menu access on XComs to role Admin
+[2024-11-05T10:04:43.347+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Dependencies
+[2024-11-05T10:04:43.350+0000] {override.py:1951} INFO - Added Permission menu access on DAG Dependencies to role Admin
+[2024-11-05T10:04:43.366+0000] {override.py:1900} INFO - Created Permission View: menu access on DAGs
+[2024-11-05T10:04:43.369+0000] {override.py:1951} INFO - Added Permission menu access on DAGs to role Admin
+[2024-11-05T10:04:43.375+0000] {override.py:1900} INFO - Created Permission View: menu access on Cluster Activity
+[2024-11-05T10:04:43.379+0000] {override.py:1951} INFO - Added Permission menu access on Cluster Activity to role Admin
+[2024-11-05T10:04:43.385+0000] {override.py:1900} INFO - Created Permission View: menu access on Datasets
+[2024-11-05T10:04:43.389+0000] {override.py:1951} INFO - Added Permission menu access on Datasets to role Admin
+[2024-11-05T10:04:43.394+0000] {override.py:1900} INFO - Created Permission View: menu access on Documentation
+[2024-11-05T10:04:43.397+0000] {override.py:1951} INFO - Added Permission menu access on Documentation to role Admin
+[2024-11-05T10:04:43.401+0000] {override.py:1900} INFO - Created Permission View: menu access on Docs
+[2024-11-05T10:04:43.404+0000] {override.py:1951} INFO - Added Permission menu access on Docs to role Admin
+[2024-11-05T10:04:44.777+0000] {override.py:1900} INFO - Created Permission View: can edit on DAGs
+[2024-11-05T10:04:44.783+0000] {override.py:1900} INFO - Created Permission View: can read on DAGs
+[2024-11-05T10:04:44.787+0000] {override.py:1900} INFO - Created Permission View: can delete on DAGs
+[2024-11-05T10:04:44.796+0000] {override.py:1496} INFO - Inserted Role: Viewer
+[2024-11-05T10:04:44.799+0000] {override.py:1951} INFO - Added Permission can read on DAGs to role Viewer
+[2024-11-05T10:04:44.802+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Dependencies
+[2024-11-05T10:04:44.803+0000] {override.py:1951} INFO - Added Permission can read on DAG Dependencies to role Viewer
+[2024-11-05T10:04:44.806+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Code
+[2024-11-05T10:04:44.807+0000] {override.py:1951} INFO - Added Permission can read on DAG Code to role Viewer
+[2024-11-05T10:04:44.809+0000] {override.py:1951} INFO - Added Permission can read on DAG Runs to role Viewer
+[2024-11-05T10:04:44.812+0000] {override.py:1900} INFO - Created Permission View: can read on Datasets
+[2024-11-05T10:04:44.813+0000] {override.py:1951} INFO - Added Permission can read on Datasets to role Viewer
+[2024-11-05T10:04:44.817+0000] {override.py:1900} INFO - Created Permission View: can read on Cluster Activity
+[2024-11-05T10:04:44.818+0000] {override.py:1951} INFO - Added Permission can read on Cluster Activity to role Viewer
+[2024-11-05T10:04:44.819+0000] {override.py:1951} INFO - Added Permission can read on Pools to role Viewer
+[2024-11-05T10:04:44.822+0000] {override.py:1900} INFO - Created Permission View: can read on ImportError
+[2024-11-05T10:04:44.823+0000] {override.py:1951} INFO - Added Permission can read on ImportError to role Viewer
+[2024-11-05T10:04:44.826+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Warnings
+[2024-11-05T10:04:44.827+0000] {override.py:1951} INFO - Added Permission can read on DAG Warnings to role Viewer
+[2024-11-05T10:04:44.828+0000] {override.py:1951} INFO - Added Permission can read on Jobs to role Viewer
+[2024-11-05T10:04:44.829+0000] {override.py:1951} INFO - Added Permission can read on My Password to role Viewer
+[2024-11-05T10:04:44.830+0000] {override.py:1951} INFO - Added Permission can edit on My Password to role Viewer
+[2024-11-05T10:04:44.831+0000] {override.py:1951} INFO - Added Permission can read on My Profile to role Viewer
+[2024-11-05T10:04:44.832+0000] {override.py:1951} INFO - Added Permission can edit on My Profile to role Viewer
+[2024-11-05T10:04:44.834+0000] {override.py:1951} INFO - Added Permission can read on SLA Misses to role Viewer
+[2024-11-05T10:04:44.835+0000] {override.py:1951} INFO - Added Permission can read on Task Instances to role Viewer
+[2024-11-05T10:04:44.837+0000] {override.py:1900} INFO - Created Permission View: can read on Task Logs
+[2024-11-05T10:04:44.839+0000] {override.py:1951} INFO - Added Permission can read on Task Logs to role Viewer
+[2024-11-05T10:04:44.840+0000] {override.py:1951} INFO - Added Permission can read on XComs to role Viewer
+[2024-11-05T10:04:44.843+0000] {override.py:1900} INFO - Created Permission View: can read on Website
+[2024-11-05T10:04:44.845+0000] {override.py:1951} INFO - Added Permission can read on Website to role Viewer
+[2024-11-05T10:04:44.846+0000] {override.py:1951} INFO - Added Permission menu access on Browse to role Viewer
+[2024-11-05T10:04:44.848+0000] {override.py:1951} INFO - Added Permission menu access on DAGs to role Viewer
+[2024-11-05T10:04:44.849+0000] {override.py:1951} INFO - Added Permission menu access on DAG Dependencies to role Viewer
+[2024-11-05T10:04:44.850+0000] {override.py:1951} INFO - Added Permission menu access on DAG Runs to role Viewer
+[2024-11-05T10:04:44.852+0000] {override.py:1951} INFO - Added Permission menu access on Datasets to role Viewer
+[2024-11-05T10:04:44.853+0000] {override.py:1951} INFO - Added Permission menu access on Cluster Activity to role Viewer
+[2024-11-05T10:04:44.854+0000] {override.py:1951} INFO - Added Permission menu access on Documentation to role Viewer
+[2024-11-05T10:04:44.855+0000] {override.py:1951} INFO - Added Permission menu access on Docs to role Viewer
+[2024-11-05T10:04:44.856+0000] {override.py:1951} INFO - Added Permission menu access on Jobs to role Viewer
+[2024-11-05T10:04:44.857+0000] {override.py:1951} INFO - Added Permission menu access on SLA Misses to role Viewer
+[2024-11-05T10:04:44.858+0000] {override.py:1951} INFO - Added Permission menu access on Task Instances to role Viewer
+[2024-11-05T10:04:44.860+0000] {override.py:1496} INFO - Inserted Role: User
+[2024-11-05T10:04:44.862+0000] {override.py:1951} INFO - Added Permission can read on DAGs to role User
+[2024-11-05T10:04:44.864+0000] {override.py:1951} INFO - Added Permission can read on DAG Dependencies to role User
+[2024-11-05T10:04:44.866+0000] {override.py:1951} INFO - Added Permission can read on DAG Code to role User
+[2024-11-05T10:04:44.867+0000] {override.py:1951} INFO - Added Permission can read on DAG Runs to role User
+[2024-11-05T10:04:44.870+0000] {override.py:1951} INFO - Added Permission can read on Datasets to role User
+[2024-11-05T10:04:44.872+0000] {override.py:1951} INFO - Added Permission can read on Cluster Activity to role User
+[2024-11-05T10:04:44.873+0000] {override.py:1951} INFO - Added Permission can read on Pools to role User
+[2024-11-05T10:04:44.876+0000] {override.py:1951} INFO - Added Permission can read on ImportError to role User
+[2024-11-05T10:04:44.880+0000] {override.py:1951} INFO - Added Permission can read on DAG Warnings to role User
+[2024-11-05T10:04:44.881+0000] {override.py:1951} INFO - Added Permission can read on Jobs to role User
+[2024-11-05T10:04:44.882+0000] {override.py:1951} INFO - Added Permission can read on My Password to role User
+[2024-11-05T10:04:44.884+0000] {override.py:1951} INFO - Added Permission can edit on My Password to role User
+[2024-11-05T10:04:44.885+0000] {override.py:1951} INFO - Added Permission can read on My Profile to role User
+[2024-11-05T10:04:44.886+0000] {override.py:1951} INFO - Added Permission can edit on My Profile to role User
+[2024-11-05T10:04:44.887+0000] {override.py:1951} INFO - Added Permission can read on SLA Misses to role User
+[2024-11-05T10:04:44.888+0000] {override.py:1951} INFO - Added Permission can read on Task Instances to role User
+[2024-11-05T10:04:44.891+0000] {override.py:1951} INFO - Added Permission can read on Task Logs to role User
+[2024-11-05T10:04:44.892+0000] {override.py:1951} INFO - Added Permission can read on XComs to role User
+[2024-11-05T10:04:44.894+0000] {override.py:1951} INFO - Added Permission can read on Website to role User
+[2024-11-05T10:04:44.895+0000] {override.py:1951} INFO - Added Permission menu access on Browse to role User
+[2024-11-05T10:04:44.897+0000] {override.py:1951} INFO - Added Permission menu access on DAGs to role User
+[2024-11-05T10:04:44.898+0000] {override.py:1951} INFO - Added Permission menu access on DAG Dependencies to role User
+[2024-11-05T10:04:44.899+0000] {override.py:1951} INFO - Added Permission menu access on DAG Runs to role User
+[2024-11-05T10:04:44.900+0000] {override.py:1951} INFO - Added Permission menu access on Datasets to role User
+[2024-11-05T10:04:44.901+0000] {override.py:1951} INFO - Added Permission menu access on Cluster Activity to role User
+[2024-11-05T10:04:44.902+0000] {override.py:1951} INFO - Added Permission menu access on Documentation to role User
+[2024-11-05T10:04:44.903+0000] {override.py:1951} INFO - Added Permission menu access on Docs to role User
+[2024-11-05T10:04:44.904+0000] {override.py:1951} INFO - Added Permission menu access on Jobs to role User
+[2024-11-05T10:04:44.905+0000] {override.py:1951} INFO - Added Permission menu access on SLA Misses to role User
+[2024-11-05T10:04:44.906+0000] {override.py:1951} INFO - Added Permission menu access on Task Instances to role User
+[2024-11-05T10:04:44.908+0000] {override.py:1951} INFO - Added Permission can edit on DAGs to role User
+[2024-11-05T10:04:44.909+0000] {override.py:1951} INFO - Added Permission can delete on DAGs to role User
+[2024-11-05T10:04:44.910+0000] {override.py:1951} INFO - Added Permission can create on Task Instances to role User
+[2024-11-05T10:04:44.911+0000] {override.py:1951} INFO - Added Permission can edit on Task Instances to role User
+[2024-11-05T10:04:44.913+0000] {override.py:1951} INFO - Added Permission can delete on Task Instances to role User
+[2024-11-05T10:04:44.914+0000] {override.py:1951} INFO - Added Permission can create on DAG Runs to role User
+[2024-11-05T10:04:44.915+0000] {override.py:1951} INFO - Added Permission can edit on DAG Runs to role User
+[2024-11-05T10:04:44.916+0000] {override.py:1951} INFO - Added Permission can delete on DAG Runs to role User
+[2024-11-05T10:04:44.919+0000] {override.py:1900} INFO - Created Permission View: can create on Datasets
+[2024-11-05T10:04:44.921+0000] {override.py:1951} INFO - Added Permission can create on Datasets to role User
+[2024-11-05T10:04:44.922+0000] {override.py:1496} INFO - Inserted Role: Op
+[2024-11-05T10:04:44.924+0000] {override.py:1951} INFO - Added Permission can read on DAGs to role Op
+[2024-11-05T10:04:44.926+0000] {override.py:1951} INFO - Added Permission can read on DAG Dependencies to role Op
+[2024-11-05T10:04:44.929+0000] {override.py:1951} INFO - Added Permission can read on DAG Code to role Op
+[2024-11-05T10:04:44.930+0000] {override.py:1951} INFO - Added Permission can read on DAG Runs to role Op
+[2024-11-05T10:04:44.932+0000] {override.py:1951} INFO - Added Permission can read on Datasets to role Op
+[2024-11-05T10:04:44.934+0000] {override.py:1951} INFO - Added Permission can read on Cluster Activity to role Op
+[2024-11-05T10:04:44.935+0000] {override.py:1951} INFO - Added Permission can read on Pools to role Op
+[2024-11-05T10:04:44.938+0000] {override.py:1951} INFO - Added Permission can read on ImportError to role Op
+[2024-11-05T10:04:44.940+0000] {override.py:1951} INFO - Added Permission can read on DAG Warnings to role Op
+[2024-11-05T10:04:44.941+0000] {override.py:1951} INFO - Added Permission can read on Jobs to role Op
+[2024-11-05T10:04:44.943+0000] {override.py:1951} INFO - Added Permission can read on My Password to role Op
+[2024-11-05T10:04:44.944+0000] {override.py:1951} INFO - Added Permission can edit on My Password to role Op
+[2024-11-05T10:04:44.945+0000] {override.py:1951} INFO - Added Permission can read on My Profile to role Op
+[2024-11-05T10:04:44.947+0000] {override.py:1951} INFO - Added Permission can edit on My Profile to role Op
+[2024-11-05T10:04:44.948+0000] {override.py:1951} INFO - Added Permission can read on SLA Misses to role Op
+[2024-11-05T10:04:44.950+0000] {override.py:1951} INFO - Added Permission can read on Task Instances to role Op
+[2024-11-05T10:04:44.952+0000] {override.py:1951} INFO - Added Permission can read on Task Logs to role Op
+[2024-11-05T10:04:44.953+0000] {override.py:1951} INFO - Added Permission can read on XComs to role Op
+[2024-11-05T10:04:44.956+0000] {override.py:1951} INFO - Added Permission can read on Website to role Op
+[2024-11-05T10:04:44.957+0000] {override.py:1951} INFO - Added Permission menu access on Browse to role Op
+[2024-11-05T10:04:44.958+0000] {override.py:1951} INFO - Added Permission menu access on DAGs to role Op
+[2024-11-05T10:04:44.959+0000] {override.py:1951} INFO - Added Permission menu access on DAG Dependencies to role Op
+[2024-11-05T10:04:44.960+0000] {override.py:1951} INFO - Added Permission menu access on DAG Runs to role Op
+[2024-11-05T10:04:44.961+0000] {override.py:1951} INFO - Added Permission menu access on Datasets to role Op
+[2024-11-05T10:04:44.962+0000] {override.py:1951} INFO - Added Permission menu access on Cluster Activity to role Op
+[2024-11-05T10:04:44.963+0000] {override.py:1951} INFO - Added Permission menu access on Documentation to role Op
+[2024-11-05T10:04:44.964+0000] {override.py:1951} INFO - Added Permission menu access on Docs to role Op
+[2024-11-05T10:04:44.965+0000] {override.py:1951} INFO - Added Permission menu access on Jobs to role Op
+[2024-11-05T10:04:44.966+0000] {override.py:1951} INFO - Added Permission menu access on SLA Misses to role Op
+[2024-11-05T10:04:44.967+0000] {override.py:1951} INFO - Added Permission menu access on Task Instances to role Op
+[2024-11-05T10:04:44.968+0000] {override.py:1951} INFO - Added Permission can edit on DAGs to role Op
+[2024-11-05T10:04:44.969+0000] {override.py:1951} INFO - Added Permission can delete on DAGs to role Op
+[2024-11-05T10:04:44.970+0000] {override.py:1951} INFO - Added Permission can create on Task Instances to role Op
+[2024-11-05T10:04:44.971+0000] {override.py:1951} INFO - Added Permission can edit on Task Instances to role Op
+[2024-11-05T10:04:44.972+0000] {override.py:1951} INFO - Added Permission can delete on Task Instances to role Op
+[2024-11-05T10:04:44.973+0000] {override.py:1951} INFO - Added Permission can create on DAG Runs to role Op
+[2024-11-05T10:04:44.975+0000] {override.py:1951} INFO - Added Permission can edit on DAG Runs to role Op
+[2024-11-05T10:04:44.977+0000] {override.py:1951} INFO - Added Permission can delete on DAG Runs to role Op
+[2024-11-05T10:04:44.980+0000] {override.py:1951} INFO - Added Permission can create on Datasets to role Op
+[2024-11-05T10:04:44.981+0000] {override.py:1951} INFO - Added Permission can read on Configurations to role Op
+[2024-11-05T10:04:44.983+0000] {override.py:1951} INFO - Added Permission menu access on Admin to role Op
+[2024-11-05T10:04:44.984+0000] {override.py:1951} INFO - Added Permission menu access on Configurations to role Op
+[2024-11-05T10:04:44.986+0000] {override.py:1951} INFO - Added Permission menu access on Connections to role Op
+[2024-11-05T10:04:44.987+0000] {override.py:1951} INFO - Added Permission menu access on Pools to role Op
+[2024-11-05T10:04:44.988+0000] {override.py:1951} INFO - Added Permission menu access on Plugins to role Op
+[2024-11-05T10:04:44.989+0000] {override.py:1951} INFO - Added Permission menu access on Variables to role Op
+[2024-11-05T10:04:44.991+0000] {override.py:1951} INFO - Added Permission menu access on Providers to role Op
+[2024-11-05T10:04:44.993+0000] {override.py:1951} INFO - Added Permission menu access on XComs to role Op
+[2024-11-05T10:04:44.995+0000] {override.py:1951} INFO - Added Permission can create on Connections to role Op
+[2024-11-05T10:04:44.996+0000] {override.py:1951} INFO - Added Permission can read on Connections to role Op
+[2024-11-05T10:04:44.997+0000] {override.py:1951} INFO - Added Permission can edit on Connections to role Op
+[2024-11-05T10:04:44.998+0000] {override.py:1951} INFO - Added Permission can delete on Connections to role Op
+[2024-11-05T10:04:44.999+0000] {override.py:1951} INFO - Added Permission can create on Pools to role Op
+[2024-11-05T10:04:45.000+0000] {override.py:1951} INFO - Added Permission can edit on Pools to role Op
+[2024-11-05T10:04:45.001+0000] {override.py:1951} INFO - Added Permission can delete on Pools to role Op
+[2024-11-05T10:04:45.002+0000] {override.py:1951} INFO - Added Permission can read on Plugins to role Op
+[2024-11-05T10:04:45.003+0000] {override.py:1951} INFO - Added Permission can read on Providers to role Op
+[2024-11-05T10:04:45.004+0000] {override.py:1951} INFO - Added Permission can create on Variables to role Op
+[2024-11-05T10:04:45.005+0000] {override.py:1951} INFO - Added Permission can read on Variables to role Op
+[2024-11-05T10:04:45.006+0000] {override.py:1951} INFO - Added Permission can edit on Variables to role Op
+[2024-11-05T10:04:45.008+0000] {override.py:1951} INFO - Added Permission can delete on Variables to role Op
+[2024-11-05T10:04:45.009+0000] {override.py:1951} INFO - Added Permission can delete on XComs to role Op
+[2024-11-05T10:04:45.013+0000] {override.py:1900} INFO - Created Permission View: can delete on Datasets
+[2024-11-05T10:04:45.015+0000] {override.py:1951} INFO - Added Permission can delete on Datasets to role Op
+[2024-11-05T10:04:45.018+0000] {override.py:1951} INFO - Added Permission can read on DAGs to role Admin
+[2024-11-05T10:04:45.022+0000] {override.py:1951} INFO - Added Permission can read on DAG Dependencies to role Admin
+[2024-11-05T10:04:45.024+0000] {override.py:1951} INFO - Added Permission can read on DAG Code to role Admin
+[2024-11-05T10:04:45.027+0000] {override.py:1951} INFO - Added Permission can read on Datasets to role Admin
+[2024-11-05T10:04:45.030+0000] {override.py:1951} INFO - Added Permission can read on Cluster Activity to role Admin
+[2024-11-05T10:04:45.032+0000] {override.py:1951} INFO - Added Permission can read on ImportError to role Admin
+[2024-11-05T10:04:45.034+0000] {override.py:1951} INFO - Added Permission can read on DAG Warnings to role Admin
+[2024-11-05T10:04:45.036+0000] {override.py:1951} INFO - Added Permission can read on Task Logs to role Admin
+[2024-11-05T10:04:45.039+0000] {override.py:1951} INFO - Added Permission can read on Website to role Admin
+[2024-11-05T10:04:45.040+0000] {override.py:1951} INFO - Added Permission can edit on DAGs to role Admin
+[2024-11-05T10:04:45.042+0000] {override.py:1951} INFO - Added Permission can delete on DAGs to role Admin
+[2024-11-05T10:04:45.045+0000] {override.py:1951} INFO - Added Permission can create on Datasets to role Admin
+[2024-11-05T10:04:45.048+0000] {override.py:1951} INFO - Added Permission can delete on Datasets to role Admin
+[2024-11-05T10:04:48.861+0000] {providers_manager.py:287} INFO - Optional provider feature disabled when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package
+10.89.0.5 - - [05/Nov/2024:10:05:12 +0000] "GET / HTTP/1.1" 302 197 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"
+10.89.0.5 - - [05/Nov/2024:10:05:13 +0000] "GET /home HTTP/1.1" 302 285 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"
+10.89.0.5 - - [05/Nov/2024:10:05:13 +0000] "GET /login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome HTTP/1.1" 200 18637 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"
+[2024-11-05T10:05:18.324+0000] {override.py:1667} INFO - Updated user Admin User
+10.89.0.5 - - [05/Nov/2024:10:05:18 +0000] "POST /login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome HTTP/1.1" 302 239 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"
+10.89.0.5 - - [05/Nov/2024:10:05:18 +0000] "GET /home HTTP/1.1" 200 33925 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"

@@ -1,0 +1,86 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+
+  airflow-init:
+    # image: apache/airflow:2.5.1-python3.9
+    image: apache/airflow:2.10.2-python3.9
+    environment:
+      AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
+      SQLALCHEMY_WARN_20: '1'
+      SQLALCHEMY_SILENCE_UBER_WARNING: '1'
+    volumes:
+      - ./dags:/opt/airflow/dags
+    entrypoint: ["airflow", "db", "init"]
+    depends_on:
+      - postgres
+
+  airflow-create-user:
+    image: apache/airflow:2.10.2-python3.9
+    environment:
+      AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"  # Geïdentificeerde typfout gecorrigeerd
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
+    volumes:
+      - ./dags:/opt/airflow/dags
+    entrypoint: ["airflow", "users", "create", "--username", "admin", "--password", "admin", "--firstname", "Admin", "--lastname", "User", "--role", "Admin", "--email", "admin@example.com"]
+    depends_on:
+      - postgres
+      - airflow-init
+
+  airflow-webserver:
+    image: apache/airflow:2.10.2-python3.9
+    environment:
+      AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
+      AIRFLOW__WEBSERVER__RBAC: 'True'
+      SQLALCHEMY_WARN_20: '1'
+      SQLALCHEMY_SILENCE_UBER_WARNING: '1'
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'True'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      # - ./config/webserver_config.py:/opt/airflow/webserver_config.py
+    command: webserver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - airflow-init
+
+  airflow-scheduler:
+    image: apache/airflow:2.10.2-python3.9
+    environment:
+      AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
+      SQLALCHEMY_WARN_20: '1'
+      SQLALCHEMY_SILENCE_UBER_WARNING: '1'
+    volumes:
+      - ./dags:/opt/airflow/dags
+    depends_on:
+      - postgres
+      - airflow-init
+
+volumes:
+  postgres_db:
