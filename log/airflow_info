@@ -1,0 +1,73 @@
+Apache Airflow
+version                | 2.10.2                                                
+executor               | LocalExecutor                                         
+task_logging_handler   | airflow.utils.log.file_task_handler.FileTaskHandler   
+sql_alchemy_conn       | postgresql+psycopg2://airflow:airflow@postgres/airflow
+dags_folder            | /opt/airflow/dags                                     
+plugins_folder         | /opt/airflow/plugins                                  
+base_log_folder        | /opt/airflow/logs                                     
+remote_base_log_folder |                                                       
+                                                                               
+
+System info
+OS              | Linux                                                                                  
+architecture    | arm                                                                                    
+uname           | uname_result(system='Linux', node='b4095873ca02', release='6.8.8-300.fc40.aarch64',    
+                | version='#1 SMP PREEMPT_DYNAMIC Sat Apr 27 18:11:03 UTC 2024', machine='aarch64')      
+locale          | ('en_US', 'UTF-8')                                                                     
+python_version  | 3.9.20 (main, Sep 13 2024, 01:28:12)  [GCC 12.2.0]                                     
+python_location | /home/airflow/.local/bin/python                                                        
+                                                                                                         
+
+Tools info
+git             | NOT AVAILABLE                                                                          
+ssh             | OpenSSH_9.2p1 Debian-2+deb12u3, OpenSSL 3.0.14 4 Jun 2024                              
+kubectl         | NOT AVAILABLE                                                                          
+gcloud          | NOT AVAILABLE                                                                          
+cloud_sql_proxy | NOT AVAILABLE                                                                          
+mysql           | mysql  Ver 15.1 Distrib 10.11.9-MariaDB, for debian-linux-gnu (aarch64) using  EditLine
+                | wrapper                                                                                
+sqlite3         | 3.40.1 2022-12-28 14:03:47                                                             
+                | df5c253c0b3dd24916e4ec7cf77d3db5294cc9fd45ae7b9c5e82ad8197f3alt1                       
+psql            | psql (PostgreSQL) 16.4 (Debian 16.4-1.pgdg120+1)                                       
+                                                                                                         
+
+Paths info
+airflow_home    | /opt/airflow                                                                           
+system_path     | /root/bin:/home/airflow/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/s
+                | bin:/usr/bin:/sbin:/bin                                                                
+python_path     | /home/airflow/.local/bin:/usr/local/lib/python39.zip:/usr/local/lib/python3.9:/usr/loca
+                | l/lib/python3.9/lib-dynload:/home/airflow/.local/lib/python3.9/site-packages:/opt/airfl
+                | ow/config:/opt/airflow/plugins:/opt/airflow/dags                                       
+airflow_on_path | True                                                                                   
+                                                                                                         
+
+Providers info
+apache-airflow-providers-amazon          | 8.28.0 
+apache-airflow-providers-celery          | 3.8.1  
+apache-airflow-providers-cncf-kubernetes | 8.4.1  
+apache-airflow-providers-common-compat   | 1.2.0  
+apache-airflow-providers-common-io       | 1.4.0  
+apache-airflow-providers-common-sql      | 1.16.0 
+apache-airflow-providers-docker          | 3.13.0 
+apache-airflow-providers-elasticsearch   | 5.5.0  
+apache-airflow-providers-fab             | 1.3.0  
+apache-airflow-providers-ftp             | 3.11.0 
+apache-airflow-providers-google          | 10.22.0
+apache-airflow-providers-grpc            | 3.6.0  
+apache-airflow-providers-hashicorp       | 3.8.0  
+apache-airflow-providers-http            | 4.13.0 
+apache-airflow-providers-imap            | 3.7.0  
+apache-airflow-providers-microsoft-azure | 10.4.0 
+apache-airflow-providers-mysql           | 5.7.0  
+apache-airflow-providers-odbc            | 4.7.0  
+apache-airflow-providers-openlineage     | 1.11.0 
+apache-airflow-providers-postgres        | 5.12.0 
+apache-airflow-providers-redis           | 3.8.0  
+apache-airflow-providers-sendgrid        | 3.6.0  
+apache-airflow-providers-sftp            | 4.11.0 
+apache-airflow-providers-slack           | 8.9.0  
+apache-airflow-providers-smtp            | 1.8.0  
+apache-airflow-providers-snowflake       | 5.7.0  
+apache-airflow-providers-sqlite          | 3.9.0  
+apache-airflow-providers-ssh             | 3.13.1 
