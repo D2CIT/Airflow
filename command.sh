@@ -26,6 +26,7 @@ podman ps --all
 # get current airflow.cfg file
 podman exec -it local_airflow-webserver_1 cat /opt/airflow/airflow.cfg > ~/Documents/airflow/local/config/airflow.cfg
 podman exec -it local_airflow-webserver_1 cat /opt/airflow/webserver_config.py > ~/Documents/airflow/local/config/webserver_config.py
+
 # get current log file
 podman logs local_airflow-webserver_1  > ~/Documents/airflow/local/log/airflow_after_setup.log
 
