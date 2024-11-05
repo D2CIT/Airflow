@@ -19,7 +19,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       SQLALCHEMY_WARN_20: '1'
       SQLALCHEMY_SILENCE_UBER_WARNING: '1'
@@ -35,7 +35,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"  # Geïdentificeerde typfout gecorrigeerd
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
     volumes:
       - ./dags:/opt/airflow/dags
@@ -50,7 +50,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       AIRFLOW__WEBSERVER__RBAC: 'True'
       SQLALCHEMY_WARN_20: '1'
@@ -72,7 +72,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "EKrgNDRARUhv3jOhbixG6EwZGKpUxwVa6KLj0nuTA4A="
+      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       SQLALCHEMY_WARN_20: '1'
       SQLALCHEMY_SILENCE_UBER_WARNING: '1'
