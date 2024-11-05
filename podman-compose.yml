@@ -3,8 +3,8 @@ services:
   postgres:
     image: postgres:14-alpine
     environment:
-      POSTGRES_USER: airflow
-      POSTGRES_PASSWORD: airflow
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: airflow
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
@@ -19,7 +19,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
+      AIRFLOW__CORE__FERNET_KEY: ${FERNETKEY}
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       SQLALCHEMY_WARN_20: '1'
       SQLALCHEMY_SILENCE_UBER_WARNING: '1'
@@ -35,7 +35,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"  # Geïdentificeerde typfout gecorrigeerd
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
+      AIRFLOW__CORE__FERNET_KEY: ${FERNETKEY}
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
     volumes:
       - ./dags:/opt/airflow/dags
@@ -50,7 +50,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
+      AIRFLOW__CORE__FERNET_KEY: ${FERNETKEY}
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       AIRFLOW__WEBSERVER__RBAC: 'True'
       SQLALCHEMY_WARN_20: '1'
@@ -72,7 +72,7 @@ services:
       AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: "<your_fernet_key>"
+      AIRFLOW__CORE__FERNET_KEY: ${FERNETKEY}
       AIRFLOW__CORE__LOAD_EXAMPLES: 'True'
       SQLALCHEMY_WARN_20: '1'
       SQLALCHEMY_SILENCE_UBER_WARNING: '1'
