@@ -55,6 +55,32 @@ curl -X POST "http://localhost:8080/api/v1/roles" \
 # get current log file
 podman logs local_airflow-webserver_1  > ~/Documents/airflow/local/log/airflow_after_create.log
 
+# possible solution:
+curl -X POST "http://localhost:8080/api/v1/roles" \
+-H "Content-Type: application/json" \
+--data '{
+  "name": "example_role",
+  "permissions": [
+    {
+      "action": {
+        "name": "can_read"
+      },
+      "resource": {
+        "name": "DagRuns"
+      }
+    }
+  ]
+}'
+
+# ERROR possible solution
+# {
+#  "detail": null,
+#  "status": 403,
+#  "title": "Forbidden",
+#  "type": "https://airflow.apache.org/docs/apache-airflow/2.10.2/stable-rest-api-ref.html#section/Errors/PermissionDenied"
+# }
+podman logs local_airflow-webserver_1  > ~/Documents/airflow/local/log/airflow_after_possible_solution.log
+
 ###################################
 # Python
 ###################################
